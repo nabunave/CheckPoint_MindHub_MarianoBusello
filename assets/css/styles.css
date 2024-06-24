@@ -1,0 +1,158 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100vw;
+}
+
+header {
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+nav a.current {
+    background-color: yellowgreen;
+    color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 0 10px black;
+}
+
+.letter {
+    color: yellowgreen;
+}
+
+.mountains-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.mountain-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    padding: 0 0 1rem 0;
+    width: 20%;
+    border-radius: 40px 0px 40px 0;
+    z-index: 2;
+    /* position: relative; */
+}
+
+h3 {
+    margin: 1rem;
+}
+
+.mountain-item img{
+    width: 100%;
+    border-radius: 40px 0 0 0;
+}
+
+#back {
+    color: yellowgreen;
+    position: absolute;
+    /* height: 70vh; */
+    font-size: 5rem;
+ /* bottom: -45%; */
+ z-index: 1;
+ transform: translate(-50%, -50%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellowgreen;
+    color: #000000;
+    /* padding: 10px; */
+    width: 100%;
+    text-align: center;
+    height: 20vh;
+}
+
+.contact a{
+    color: #000000;
+    font-style: italic;
+}
+
+ @media (max-width: 600px) {
+    header {
+        background-size: cover;
+        background-position: center;
+        height: 180vh;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    nav a {
+        font-size: 0.9rem;
+        padding: 1rem;
+        text-align: center;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        color: white;
+        font-size: 2rem;
+        text-shadow: 0 0 10px black;
+    }
+    .mountains-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
