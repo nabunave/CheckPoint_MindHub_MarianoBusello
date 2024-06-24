@@ -5,9 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -63,6 +66,7 @@ h1 {
     justify-content: space-around;
     margin: 2rem;
     flex-wrap: wrap;
+    height: 50vh;
 }
 
 .mountain-item {
@@ -75,25 +79,30 @@ h1 {
     border-radius: 40px 0px 40px 0;
     z-index: 2;
     /* position: relative; */
+    background-color: white;
 }
 
 h3 {
     margin: 1rem;
 }
 
-.mountain-item img{
+.mountain-item img {
     width: 100%;
     border-radius: 40px 0 0 0;
+}
+
+.mountain-item ul li {
+    z-index: 2;
 }
 
 #back {
     color: yellowgreen;
     position: absolute;
-    /* height: 70vh; */
+    height: 70vh;
     font-size: 5rem;
- /* bottom: -45%; */
- z-index: 1;
- transform: translate(-50%, -50%);
+    bottom: -47%;
+    z-index: -1;
+    font-weight: bold;
 }
 
 footer {
@@ -102,23 +111,23 @@ footer {
     align-items: center;
     background-color: yellowgreen;
     color: #000000;
-    /* padding: 10px; */
     width: 100%;
     text-align: center;
     height: 20vh;
 }
 
-.contact a{
+.contact a {
     color: #000000;
     font-style: italic;
 }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
     header {
         background-size: cover;
         background-position: center;
         height: 180vh;
     }
+
     nav {
         display: flex;
         justify-content: space-around;
@@ -126,6 +135,7 @@ footer {
         flex-direction: column;
         width: 100vw;
     }
+
     nav a {
         font-size: 0.9rem;
         padding: 1rem;
@@ -135,6 +145,7 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     h1 {
         display: flex;
         justify-content: center;
@@ -144,11 +155,13 @@ footer {
         font-size: 2rem;
         text-shadow: 0 0 10px black;
     }
+
     .mountains-list {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     footer {
         display: flex;
         flex-direction: column;
